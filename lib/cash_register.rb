@@ -1,4 +1,4 @@
-def Cash_Register
+def CashRegister
   attr_accessor :price, :quantity, :discount_percentage
   
   def initialize
