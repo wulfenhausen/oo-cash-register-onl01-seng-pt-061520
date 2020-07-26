@@ -22,7 +22,10 @@ class CashRegister
     @total
   end
   
-  def apply_
+  def apply_discount(discount_amount)
+    discounted_amount_as_percentage = (100 - discount_amount.to.f) / 100
+    @total = @total * discounted_amount_as_percentage
+  end
   
   
   def void_last_transaction
