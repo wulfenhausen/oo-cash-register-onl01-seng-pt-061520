@@ -8,10 +8,20 @@ def CashRegister
   end
   
   def add_item(name, price, quantity = 1)
-  end
-  
-  def total
+    if quantity > 1
+      i = 0
+      while i < quantity
+      @items << name
+      i += 1
+    end
+    else
+      @items << name
+    end
+    @transaction = price * quantity
+    @total += @transaction
     @total
   end
+  
+ 
   
 end
