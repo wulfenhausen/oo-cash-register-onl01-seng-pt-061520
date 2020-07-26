@@ -1,11 +1,12 @@
 def CashRegister
-  attr_accessor :price, :quantity, :discount_percentage
+  attr_accessor :total, :discount, :items, :transaction
   
-  def initialize
-    @price = price
-    @quantity = quantity
-    @discount_percentage = discount_percentage
-    
+  def initialize(discount = 0)
+    @total = 0
+    @items = []
+    @discount = discount
   end
+  
+ 
   
 end
