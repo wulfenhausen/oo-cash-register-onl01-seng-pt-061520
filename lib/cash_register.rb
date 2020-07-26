@@ -7,6 +7,7 @@ def CashRegister
     @discount = discount
   end
   
+  def add
  
   
 end
