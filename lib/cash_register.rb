@@ -22,10 +22,13 @@ class CashRegister
     @total
   end
   
-  def apply_discount(discount)
-    d
-    discounted_amount_as_percentage = (100 - discount_amount.to.f) / 100
-    @total = @total * discounted_amount_as_percentage
+  def apply_discount
+    if @discount == 0
+      puts "there are no discounts to apply"
+    elsif @discount > 0
+      @discount = @discount.to_f/100
+      @total = @total 
+    
   end
   
   
